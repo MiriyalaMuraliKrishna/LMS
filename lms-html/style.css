@@ -1,0 +1,111 @@
+
+@import url('_colors.css');
+@import url('_header.css');
+
+ @font-face {
+     src: url("./fonts/Geometria-Light.ttf") format("truetype");
+     font-family: "Geometria";
+     font-weight: 300;
+     font-display: swap;
+}
+ @font-face {
+     src: url("./fonts/Geometria.ttf") format("truetype");
+     font-family: "Geometria";
+     font-weight: 400;
+     font-display: swap;
+}
+ @font-face {
+     src: url("./fonts/Geometria-Medium.ttf") format("truetype");
+     font-family: "Geometria";
+     font-weight: 500;
+     font-display: swap;
+}
+ @font-face {
+     src: url("./fonts/Geometria-Bold.ttf") format("truetype");
+     font-family: "Geometria";
+     font-weight: 700;
+     font-display: swap;
+}
+ @font-face {
+     src: url("./fonts/Geometria-ExtraBold.ttf") format("truetype");
+     font-family: "Geometria";
+     font-weight: 800;
+     font-display: swap;
+}
+
+
+
+::selection {background-color: var(--White); color: var(--Black);}
+::-moz-selection {background-color: var(--White); color: var(--Black);}
+
+/*-- flex css starts here --*/
+.flex{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; width: 100%; }
+.flex-vcenter{-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.flex-content-center{-ms-justify-content: center; -webkit-justify-content: center; justify-content: center; }
+.flex-center{-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -ms-justify-content: center; -webkit-justify-content: center; justify-content: center; }
+.flex-nowrap{flex-wrap: nowrap; }
+.flex-end{align-items: flex-end;}
+.flex-start{align-items: flex-start;}
+.row-reverse{flex-direction: row-reverse;}
+.inline-flex { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flexbox; display: -webkit-inline-flexbox; display: inline-flex; }
+.no-wrap{flex-wrap: nowrap;}
+.flex-col{flex-direction: column;}
+.flex-content-end{justify-content: flex-end;}
+
+a{  transition: all 0.5s ease;}
+body{font-family: "Geometria", sans-serif;}
+.pagelayout-login #page{background: #e2fcff;}
+.login-container h1.login-heading, .login-container .login-heading.h1{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+form input.form-control-lg{ border: 1px solid oklch(67.22% 0.0355 279.77deg); width: 100%; font-size: 17px; font-weight: 500; line-height: 28px; letter-spacing: 0px; box-shadow: none; padding: 15px 16px 16px; vertical-align: middle; height: auto; border-radius: 5px; background: #fff; color: oklch(29.74% 0.0362 281.74deg); font-family: "Geometria"; appearance: none; opacity: 1; outline: none; transform: 0.5s all ease; text-transform: capitalize;}
+form input.form-control-lg:focus{box-shadow: 0 0px 1px #217177; border-color: #217177;}
+form .login-form-submit{text-align: right;}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 13px 24px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+.btn.btn-primary{background-color: #ff6c4b; color: #fff;}
+.btn.btn-primary:hover{background-color: #217177; color: #fff;}
+.btn.btn-secondary{
+    background-color: transparent;
+    border: 1px solid #ff6c4b;
+}
+
+form .login-form-submit button.btn-lg{width: 100%;}
+.login-form-forgotpassword{text-align: right;}
+.login-form-forgotpassword a{
+    font-size: 16px;
+  line-height: 24px;
+  color: #181818;
+  text-decoration-color: #217177;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
+  font-weight: 500;
+}
+.login-form-forgotpassword a:hover{
+    color: #217177;
+    text-decoration-color: transparent;
+}
+/* .login-signup{text-align: right;}
+form#guestlogin{text-align: right;} */
