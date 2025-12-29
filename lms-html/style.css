@@ -1,6 +1,8 @@
 
 @import url('_colors.css');
+@import url('_reset.css');
 @import url('_header.css');
+@import url('_footer.css');
 
  @font-face {
      src: url("./fonts/Geometria-Light.ttf") format("truetype");
@@ -35,26 +37,14 @@
 
 
 
-::selection {background-color: var(--White); color: var(--Black);}
-::-moz-selection {background-color: var(--White); color: var(--Black);}
 
-/*-- flex css starts here --*/
-.flex{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; width: 100%; }
-.flex-vcenter{-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
-.flex-content-center{-ms-justify-content: center; -webkit-justify-content: center; justify-content: center; }
-.flex-center{-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -ms-justify-content: center; -webkit-justify-content: center; justify-content: center; }
-.flex-nowrap{flex-wrap: nowrap; }
-.flex-end{align-items: flex-end;}
-.flex-start{align-items: flex-start;}
-.row-reverse{flex-direction: row-reverse;}
-.inline-flex { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flexbox; display: -webkit-inline-flexbox; display: inline-flex; }
-.no-wrap{flex-wrap: nowrap;}
-.flex-col{flex-direction: column;}
-.flex-content-end{justify-content: flex-end;}
+body{font-family: "Geometria", sans-serif; background: #fff; position: relative; overflow-x: hidden;}
+.site-main-cover{padding-top: 71px; background: #e2fcff;}
 
-a{  transition: all 0.5s ease;}
-body{font-family: "Geometria", sans-serif;}
-.pagelayout-login #page{background: #e2fcff;}
+.pagelayout-login #page{background: transparent;}
+
+#page-wrapper #page:not(.drawers){padding: 80px 0 80px !important;}
+.login-container{border-radius: 0; padding: 49px 50px 50px; margin: 0;}
 .login-container h1.login-heading, .login-container .login-heading.h1{
     font-size: 32px;
     line-height: 40px;
@@ -64,7 +54,7 @@ form input.form-control-lg{ border: 1px solid oklch(67.22% 0.0355 279.77deg); wi
 form input.form-control-lg:focus{box-shadow: 0 0px 1px #217177; border-color: #217177;}
 form .login-form-submit{text-align: right;}
 
-.btn {
+.btn{
   display: inline-block;
   font-weight: 500;
   line-height: 1.5;
@@ -78,21 +68,39 @@ form .login-form-submit{text-align: right;}
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 13px 24px 12px;
-  font-size: 1rem;
+  padding: 10px 18px 9px;
+  font-size: 14px;
+  line-height: 18px;
   border-radius: 5px;
   transition: all 0.5s ease;
   text-transform: capitalize;
 }
+.btn.btn-lg{
+    font-size: 18px;
+    line-height: 24px;  padding: 13px 24px 12px;}
 .btn.btn-primary{background-color: #ff6c4b; color: #fff;}
 .btn.btn-primary:hover{background-color: #217177; color: #fff;}
 .btn.btn-secondary{
-    background-color: transparent;
-    border: 1px solid #ff6c4b;
+    background-color: #e2fcff;
+  border: 1px solid #217177;
 }
+.btn.btn-secondary:hover{
+    background-color: #217177;
+    color: #fff;
+}
+.btn.btn-secondary.bg-blue{
+    background-color: #217177;
+    color: #fff;
+}
+.btn.btn-secondary.bg-blue:hover{
+    border-color: #ff6c4b;
+    background-color: #ff6c4b; color: #fff;
+}
+.btn.radius-32{border-radius: 32px;}
+
 
 form .login-form-submit button.btn-lg{width: 100%;}
-.login-form-forgotpassword{text-align: right;}
+.login-form-forgotpassword{text-align: right; padding-bottom: 9px;}
 .login-form-forgotpassword a{
     font-size: 16px;
   line-height: 24px;
@@ -107,5 +115,6 @@ form .login-form-submit button.btn-lg{width: 100%;}
     color: #217177;
     text-decoration-color: transparent;
 }
-/* .login-signup{text-align: right;}
-form#guestlogin{text-align: right;} */
+/* .login-signup{text-align: right;} */
+form#guestlogin{margin-top: 16px;}
+/* form#guestlogin{text-align: right;} */
